@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLEX BOX</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #1e90ff; /* Cambio de color a azul claro */
+            color: #fff; /* Cambio de color a blanco */
+            padding: 20px;
+        }
+        nav {
+            background: #1e90ff; /* Cambio de color a azul claro */
+            padding: 10px;
+            text-align: center; /* Alineación centrada */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            font-size: 18px; /* Letras más grandes */
+            color: #fff; /* Cambio de color a blanco */
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        aside {
+            width: 200px;
+            background: #ccc;
+            padding: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #fff; /* Cambio de color a blanco */
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Encabezado -->
+        <h1>FLEX BOX</h1>
+    </header>
+    
+    <nav>
+        <!-- Barra de navegación horizontal -->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="file:///C:/Users/jorge/Desktop/AudioExplicativo.html">Audios</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <!-- Barra de menú lateral -->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Audios</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </aside>
+    
+   <main>
+        <!-- Flex box -->
+        <h2>FLEX BOX</h2>
+        <p>También es conocido como Modelo Flexible y nos va
+a servir para que una página pueda trabajar con diferentes
+ dispositivos ya que al cambiar las dimensiones y hasta su
+ orientación, nos va a permitir acomodar los diferentes
+ elementos. A esto vamos a llamar diseño adaptativo.
+ Lo que busca es cambiar el orden de los elementos
+ sin importar el orden del código HTML, por tal motivo es 
+que en este modelamiento no se utiliza un ordenamiento ni horizontal ni vertical, ya que estos dos conceptos son cambiados por un eje principal (main axis) y otro secundario (cross axis) lo cual en la lógica que utiliza este modelo o estandar es rellenar los espacios que quedan libres. Además, otra de las propiedades que tenemos que tener en cuenta es la dirección (Flex-direction), la cual lo que hace es especificar la dirección del eje principal. Aparte también podemos ajustar nuestro contenido respecto al eje principal todo esto lo vamos a poder hacer dentro de dos conceptos importantes que son:
+
+flex container
+flex item Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. (Pág. 118-127)</p>
+    
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/JorgeEsneiderOsorio/JorgeEsneiderOsorio.github.io/main/fase 3/img/imgFlex.png" alt="Descripción de la imagen">
+    </div>
+    
+    </main>
+    <footer>
+        <!-- Pie de página -->
+        <p>Skype:Jorgecdn14@outlook.es  Correo Ins:jeosoriob@unadvirtual.edu.co 01 Jun 2023</p>
+    </footer>
+</body>
+</html>

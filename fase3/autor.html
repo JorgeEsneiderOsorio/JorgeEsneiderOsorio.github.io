@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Información del Autor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .author-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .author-info img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .author-info p {
+            margin: 0;
+        }
+        .repo-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Información del Autor</h1>
+        
+        <div class="author-info">
+            <img src="C:\Users\jorge\Downloads\Compressed\JorgeEsneiderOsorio.github.io-main\fase 3\img\img2.jpg" alt="Imagen del autor">
+            <h2>Nombre del Autor</h2>
+            <p>Carrera Universitaria: Ingenieria De Sistemas</p>
+            <p>Correo: jeosoriob@unadvirtual.edu.co</p>
+            <p>Número de Celular: 3006288051</p>
+            <p>Skype: skype_Jorgecdn14@outook.es</p>
+        </div>
+        
+        
+    <script>
+        document.getElementById('image-upload').addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('image-preview').innerHTML = '<img src="' + e.target.result + '" alt="Imagen seleccionada">';
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>
