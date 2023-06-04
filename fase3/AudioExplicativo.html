@@ -1,29 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Audio Explicativo - Flexbox</title>
+    <title>Barra de navegación</title>
     <style>
-        .container {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #1e90ff;
             display: flex;
-            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
-            justify-content: center;
-            text-align: center;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-right: 10px;
+        }
+        .navbar ul li:first-child {
+            margin-right: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .container {
             margin-top: 50px;
+            text-align: center;
+        }
+        .container img {
+            max-width: 300px;
+        }
+        .container h2 {
+            margin-top: 20px;
+        }
+        .container p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Audio - Flexbox</h1>
-        <p>Aquí puedes escuchar una explicación de Flexbox.</p>
+    <div class="navbar">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+        </ul>
+    </div>
+
+        <div class="content">
+            <h1>Audio - Flexbox</h1>
+            <p>Aquí puedes escuchar una explicación de Flexbox.</p>
+            
+            <audio controls>
+                <source src="/fase3/audio/Audio1.mp3" type="audio/mpeg">
+                Tu navegador no admite el elemento de audio.
+            </audio>
         
-        <audio controls>
-            <source src="/fase3/audio/Audio1.mp3" type="audio/mpeg">
-            Tu navegador no admite el elemento de audio.
-        </audio>
-    
-        <img src="/fase3\img\imgFlex.jpg" alt="Descripción de la imagen">
+            <img src="/fase3/img/imgFlex.jpg" alt="Descripción de la imagen">
+        </div>
     </div>
 </body>
 </html>
