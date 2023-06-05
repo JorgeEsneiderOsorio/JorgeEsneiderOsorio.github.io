@@ -9,14 +9,14 @@
             font-family: Arial, sans-serif;
         }
         header {
-            background: #1e90ff; /* Cambio de color a azul claro */
-            color: #fff; /* Cambio de color a blanco */
+            background: #1e90ff;
+            color: #fff;
             padding: 20px;
         }
         nav {
-            background: #1e90ff; /* Cambio de color a azul claro */
+            background: #1e90ff;
             padding: 10px;
-            text-align: center; /* Alineación centrada */
+            text-align: center;
         }
         nav ul {
             list-style: none;
@@ -28,8 +28,8 @@
             margin-right: 10px;
         }
         nav ul li a {
-            font-size: 18px; /* Letras más grandes */
-            color: #fff; /* Cambio de color a blanco */
+            font-size: 18px;
+            color: #fff;
             text-decoration: none;
         }
         main {
@@ -47,7 +47,7 @@
             text-align: center;
         }
         h1 {
-            color: #fff; /* Cambio de color a blanco */
+            color: #fff;
         }
         .image-container {
             text-align: center;
@@ -63,52 +63,61 @@
 </head>
 <body>
     <header>
-        <!-- Encabezado -->
         <h1>FLEX BOX</h1>
     </header>
     
     <nav>
-        <!-- Barra de navegación horizontal -->
         <ul>
             <li><a href="/index.html">Inicio De Fases</a></li>
             <li><a href="/fase3/AudioExplicativo.html">Audios</a></li>
-            <li><a href="/fase3/navigate.html">Proposito sitio</a></li>
+            <li><a href="/fase3/navigate.html">Propósito sitio</a></li>
             <li><a href="/fase3/autor.html">Nosotros</a></li>
         </ul>
     </nav>
     
     <aside>
-        <!-- Barra de menú lateral -->
         <ul>
             <li><a href="/index.html">Inicio De Fases</a></li>
             <li><a href="/fase3/AudioExplicativo.html">Audios</a></li>
-            <li><a href="/fase3/navigate.html">Proposito sitio</a></li>
+            <li><a href="/fase3/navigate.html">Propósito sitio</a></li>
             <li><a href="/fase3/autor.html">Nosotros</a></li>
         </ul>
     </aside>
     
-   <main>
-        <!-- Flex box -->
+    <main>
         <h2>FLEX BOX</h2>
-        <p>También es conocido como Modelo Flexible y nos va
-a servir para que una página pueda trabajar con diferentes
- dispositivos ya que al cambiar las dimensiones y hasta su
- orientación, nos va a permitir acomodar los diferentes
- elementos.</p>
-        <p>A esto vamos a llamar diseño adaptativo.
- Lo que busca es cambiar el orden de los elementos
- sin importar el orden del código HTML, por tal motivo es 
-que en este modelamiento no se utiliza un ordenamiento ni horizontal ni vertical, ya que estos dos conceptos son cambiados por un eje principal (main axis) y otro secundario (cross axis) lo cual en la lógica que utiliza este modelo o estandar es rellenar los espacios que quedan libres. Además, otra de las propiedades que tenemos que tener en cuenta es la dirección (Flex-direction), la cual lo que hace es especificar la dirección del eje principal. Aparte también podemos ajustar nuestro contenido respecto al eje principal todo esto lo vamos a poder hacer dentro de dos conceptos importantes que son:</p>
-        <p>flex container
-flex item Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. (Pág. 118-127)</p>
+        <p>También es conocido como Modelo Flexible y nos va a servir para que una página pueda trabajar con diferentes dispositivos ya que al cambiar las dimensiones y hasta su orientación, nos va a permitir acomodar los diferentes elementos.</p>
+        <p>A esto vamos a llamar diseño adaptativo. Lo que busca es cambiar el orden de los elementos sin importar el orden del código HTML, por tal motivo es que en este modelamiento no se utiliza un ordenamiento ni horizontal ni vertical, ya que estos dos conceptos son cambiados por un eje principal (main axis) y otro secundario (cross axis), lo cual en la lógica que utiliza este modelo o estándar es rellenar los espacios que quedan libres. Además, otra de las propiedades que tenemos que tener en cuenta es la dirección (Flex-direction), la cual lo que hace es especificar la dirección del eje principal. Aparte también podemos ajustar nuestro contenido respecto al eje principal. Todo esto lo vamos a poder hacer dentro de dos conceptos importantes que son:</p>
+        <p>flex container flex item Recio García, J. A. (2016). HTML5, CSS3 y JQuery: curso práctico. RA-MA Editorial. (Pág. 118-127)</p>
     
-    <div class="image-container">
-        <img src="/fase3/img/im3.jpg" alt="Descripción de la imagen" style="max-width: 50%;">
-    </div>
-    
+        <div class="image-container">
+            <img src="/fase3/img/im3.jpg" alt="Descripción de la imagen" style="max-width: 50%;">
+        </div>
     </main>
+
+<h2>Introducción a Flexbox</h2>
+<p>Flexbox es una técnica de diseño en CSS que permite crear diseños flexibles y responsivos en páginas web. Con Flexbox, puedes controlar fácilmente el posicionamiento, el tamaño y el orden de los elementos en un contenedor.</p>
+    
+<h2>Propiedades de Flexbox</h2>
+<ul>
+  <li><code>display</code>: Establece el elemento padre como un contenedor flexible.</li>
+  <li><code>flex-direction</code>: Define la dirección principal en la que se colocan los elementos flexibles.</li>
+  <li><code>justify-content</code>: Alinea los elementos flexibles a lo largo del eje principal.</li>
+  <li><code>align-items</code>: Alinea los elementos flexibles a lo largo del eje secundario.</li>
+  <li><code>flex-wrap</code>: Controla si los elementos flexibles deben envolverse en múltiples líneas o no.</li>
+  <!-- Agrega más propiedades de Flexbox según sea necesario -->
+</ul>
+
+<h2>Modelo de caja flexible</h2>
+<p>En Flexbox, el modelo de caja es diferente al modelo de caja tradicional de CSS. Los elementos flexibles se ajustan automáticamente para adaptarse al espacio disponible en el contenedor padre. Esto evita problemas de alineación y posicionamiento, ya que los elementos se estiran o se contraen según sea necesario.</p>
+
+<h2>Diseño responsivo con Flexbox</h2>
+<p>Flexbox es una herramienta poderosa para crear diseños responsivos. Los elementos flexibles pueden reorganizarse automáticamente en función del tamaño de la pantalla. Puedes utilizar propiedades como <code>flex-direction</code>, <code>flex-wrap</code> y <code>media queries</code> para lograr diseños adaptables y amigables para dispositivos móviles.</p>
+
+<h2>Compatibilidad del navegador</h2>
+<p>Flexbox es compatible con la mayoría de los navegadores modernos, incluidos Chrome, Firefox, Safari y Edge. Sin embargo, es posible que algunas versiones antiguas de navegadores no admitan todas las propiedades de Flexbox. Se recomienda verificar la compatibilidad en los navegadores objetivo y utilizar prefijos vendor y técnicas de degradado para garantizar una experiencia adecuada en todos los navegadores.</p>
+
     <footer>
-        <!-- Pie de página -->
         <p>Skype:Jorgecdn14@outlook.es  Correo Institucional:jeosoriob@unadvirtual.edu.co 01 Jun 2023</p>
     </footer>
 </body>
